@@ -39,16 +39,16 @@ int main(int argc, char const *argv[])
     char *ch = ((char*) malloc(50 * sizeof(string)));
     file.get(*ch);
     while(!file.eof())
-    {
-        file3<<ch;
-        file.get(*ch);
-    }
-    file2.get(*ch);
-    while(!file2.eof())
-    {
-        file3<<ch;
-        file2.get(*ch);
-    }
+       {
+           file3<<ch;
+           file.get(*ch);
+       }
+              file2.get(*ch);
+              while(!file2.eof())
+          {
+               file3<<ch;
+               file2.get(*ch);
+          }
     }
     return 0;
 }
